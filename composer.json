@@ -1,0 +1,48 @@
+{
+    "name": "na2axl/laravel-api-flow",
+    "description": "Server-driven multi-step API flows for Laravel: declare steps as a state machine, let the API tell clients which steps are legal next.",
+    "keywords": ["laravel", "flow", "multi-step", "wizard", "onboarding", "state-machine", "api"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Axel Nana",
+            "email": "ax.lnana@outlook.com",
+            "homepage": "https://github.com/na2axl"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/cache": "^12.0|^13.0",
+        "illuminate/contracts": "^12.0|^13.0",
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/routing": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Na2axl\\LaravelApiFlow\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Na2axl\\LaravelApiFlow\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Na2axl\\LaravelApiFlow\\LaravelApiFlowServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
